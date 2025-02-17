@@ -5,7 +5,7 @@
  *
  * Description: Depending on whether the code is compiled in 32-bit
  * or 64-bit mode, the size (en bytes) de chaque type peut varier.
- * 
+ *
  * Return: 0.
  */
 int main(void)
@@ -16,5 +16,5 @@ int main(void)
 	printf("Size of a long long int: %d byte(s)\n", (int)sizeof(long long int));
 	printf("Size of a float: %d byte(s)\n", (int)sizeof(float));
 
-    return (0);
+	return (0);
 }
