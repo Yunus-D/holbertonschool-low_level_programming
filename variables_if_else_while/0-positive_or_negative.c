@@ -8,7 +8,7 @@
 * Description: Ce programme attribue un nombre aleatoire a la variable n
 * et il indique si le nombre et positif, negatif ou zero
 *
-*return: toujours 0 = succes
+*Return: 0 on success
 */
 int main(void)
 {
