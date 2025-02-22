@@ -2,6 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 
+/**
+* main - point d'entree
+*
+* Description: Ce programme attribue un nombre aleatoire a la variable n
+* et il indique si le nombre et positif, negatif ou zero
+*
+*return: toujours 0 = succes
+*/
 int main(void)
 {
 	int n;
