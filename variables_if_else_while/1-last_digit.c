@@ -5,11 +5,11 @@
 /**
  * main - Entry point
  *
- * Description: This program assigns a random number to the variable n each time
- * it is executed, calculates its last digit, and prints a message based on
- * whether the last digit is greater than 5, equal to 0, or less than 6 and not 0.
+ * Description: This program assigns a random number to the variable n each
+ * time it is executed, then stores the last digit of n in last_digit,
+ * and prints a message depending on its value.
  *
- * Return: 0 on success.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
