@@ -4,14 +4,14 @@
  * times_table - prints the 9 times table, starting with 0
  *
  * Description:
- * Avoids having an extra space before the first number
- * of each line, matching exactly the output format.
+ *	Avoids having an extra space before the first number
+ *	of each line, matching exactly the output format.
  */
-void times_table(void)
+void	times_table(void)
 {
-	int i;
-	int j;
-	int product;
+	int	i;
+	int	j;
+	int	product;
 
 	for (i = 0; i < 10; i++)
 	{
