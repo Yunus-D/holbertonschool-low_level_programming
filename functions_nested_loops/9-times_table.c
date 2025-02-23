@@ -2,12 +2,16 @@
 
 /**
  * times_table - prints the 9 times table, starting with 0
+ *
+ * Description:
+ * Avoids having an extra space before the first number
+ * of each line, matching exactly the output format.
  */
-void	times_table(void)
+void times_table(void)
 {
-	int	i;
-	int	j;
-	int	product;
+	int i;
+	int j;
+	int product;
 
 	for (i = 0; i < 10; i++)
 	{
@@ -15,14 +19,20 @@ void	times_table(void)
 		{
 			product = i * j;
 
-			/* Si on n’est pas dans la première colonne (j > 0), afficher la virgule et l'espace */
+			/* Si on n’est pas dans la première colonne,
+			   on affiche ", " pour séparer */
 			if (j > 0)
 			{
 				_putchar(',');
 				_putchar(' ');
 			}
 
-			/* Vérifie si product < 10, afin d'aligner sur 2 colonnes (un espace en plus) */
+			/*
+			 * Gestion de l'alignement :
+			 * Si product < 10, on ajoute un espace avant le chiffre
+			 * (sauf s'il est dans la toute première colonne, alors on n’ajoute
+			 *  que l’espace prévu ci-dessus quand j>0).
+			 */
 			if (product < 10)
 			{
 				_putchar(' ');
