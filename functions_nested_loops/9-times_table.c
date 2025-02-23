@@ -3,9 +3,11 @@
 /**
  * times_table - prints the 9 times table, starting with 0
  *
- * Description:
- *	Avoids having an extra space before the first number
- *	of each line, matching exactly the output format.
+ * Description: Prints the 9 times table formatted as follows:
+ *	0,  0,  0,  0,  0,  0,  0,  0,  0,  0
+ *	0,  1,  2,  3,  4,  5,  6,  7,  8,  9
+ *	0,  2,  4,  6,  8, 10, 12, 14, 16, 18
+ *	0,  3,  6,  9, 12, 15, 18, 21, 24, 27
  */
 void	times_table(void)
 {
@@ -18,21 +20,11 @@ void	times_table(void)
 		for (j = 0; j < 10; j++)
 		{
 			product = i * j;
-
-			/* Si on n’est pas dans la première colonne,
-			   on affiche ", " pour séparer */
 			if (j > 0)
 			{
 				_putchar(',');
 				_putchar(' ');
 			}
-
-			/*
-			 * Gestion de l'alignement :
-			 * Si product < 10, on ajoute un espace avant le chiffre
-			 * (sauf s'il est dans la toute première colonne, alors on n’ajoute
-			 *  que l’espace prévu ci-dessus quand j>0).
-			 */
 			if (product < 10)
 			{
 				_putchar(' ');
