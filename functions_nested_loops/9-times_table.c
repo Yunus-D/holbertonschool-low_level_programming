@@ -2,12 +2,6 @@
 
 /**
  * times_table - prints the 9 times table, starting with 0
- *
- * Description:
- *	The table is formatted de la façon suivante :
- *	    0,  0,  0,  0,  ...
- *	    0,  1,  2,  3,  ...
- *	etc.
  */
 void	times_table(void)
 {
@@ -21,14 +15,14 @@ void	times_table(void)
 		{
 			product = i * j;
 
-			/* Si on n’est pas en première colonne, on affiche ", " */
+			/* Si on n’est pas dans la première colonne (j > 0), afficher la virgule et l'espace */
 			if (j > 0)
 			{
 				_putchar(',');
 				_putchar(' ');
 			}
 
-			/* Si le produit est un chiffre < 10, on ajoute un espace */
+			/* Vérifie si product < 10, afin d'aligner sur 2 colonnes (un espace en plus) */
 			if (product < 10)
 			{
 				_putchar(' ');
@@ -36,7 +30,6 @@ void	times_table(void)
 			}
 			else
 			{
-				/* Deux chiffres */
 				_putchar((product / 10) + '0');
 				_putchar((product % 10) + '0');
 			}
