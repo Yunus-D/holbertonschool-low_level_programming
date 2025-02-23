@@ -34,7 +34,7 @@ void	times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
-				/* Pour les colonnes suivantes, on ajoute un espace si le produit est un chiffre */
+				/* Colonnes suivantes, on ajoute un espace si le produit est un chiffre */
 				if (product < 10)
 				{
 					_putchar(' ');
