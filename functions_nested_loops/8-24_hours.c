@@ -3,7 +3,8 @@
 /**
  * jack_bauer - prints every minute of the day of Jack Bauer
  *
- * Description: Prints the time starting from 00:00 to 23:59, each on a new line,
+ * Description: Prints the time starting from 00:00 to 23:59,
+ * each on a new line,
  * using only _putchar for output.
  */
 void jack_bauer(void)
