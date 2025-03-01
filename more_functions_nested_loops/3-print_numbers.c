@@ -13,7 +13,10 @@ void	print_numbers(void)
 {
 	char	digit;
 
-	/* 1er appel à _putchar dans la boucle (répété à l'exécution, mais une seule ligne dans le code) */
+	/**
+	*1er appel à _putchar dans la boucle
+	*(répété à l'exécution, mais une seule ligne dans le code)
+	*/
 	for (digit = '0'; digit <= '9'; digit++)
 		_putchar(digit);
 
